@@ -5,9 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>fitz.learn</groupId>
     <artifactId>bigdatalearn</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
         <module>yarn</module>
+        <module>protobuf</module>
+        <module>nio</module>
     </modules>
 </project>
