@@ -1,0 +1,32 @@
+@startuml
+title 用例图
+
+actor A
+actor B
+A<|--B
+note left of A:角色
+
+note "继承" as inherit
+A .. inherit
+inherit .. B
+
+A->(Base)
+B->(Inherit)
+(Base)--|>(Inherit)
+note right of (Base):用例
+
+B----->(Do some things)
+note "-越多，箭头越长" as things
+B .. things
+things .. (Do some things)
+
+B -left->(Do some things2)
+note top of (Do some things2):改变箭头方向
+
+rectangle SomeThings {
+    C -- (SomeThings)
+    (SomeThings) .> (Sub some things) : message
+    (Sub some things2) .> (SomeThings) : message
+    (SomeThings) -- D
+}
+@enduml

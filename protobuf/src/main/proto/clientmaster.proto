@@ -1,0 +1,41 @@
+syntax="proto2";
+
+option java_package = "fitz.bigdatalearn.protobuf.proto";
+option java_outer_classname = "MasterClient";
+option java_generate_equals_and_hash = true;
+option java_generic_services = true;
+
+package tutorial;
+
+message CMRequest {
+    required string name = 1;
+    required int32 rows = 2;
+    required int32 cols = 3;
+}
+
+message CMResponse {
+    required bool stats =1;
+}
+
+message RMRequest {
+    required string name = 1;
+}
+
+message RMResponse {
+    required bool stats = 1;
+}
+
+message AMRequest {
+    optional string name = 1;
+}
+
+message AMResponse {
+    repeated string names = 1;
+}
+
+//interface
+service RpcService {
+    rpc createMatrix(CMRequest) returns (CMResponse);
+    rpc releaseMatrix(RMRequest) returns (RMResponse);
+    rpc getAllMatrix(AMRequest) returns (AMResponse);
+}

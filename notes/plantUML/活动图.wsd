@@ -1,0 +1,55 @@
+@startuml
+title 活动图
+
+start
+
+:开始;
+note left: 活动标签
+if (你是程序员吗？) then (我不是)
+    :我和你没有共同话题;
+else if (你会AI吗？) then (Yes)
+    :请帮我找2个大涨的股票;
+    repeat
+        fork
+            partition 线程一 {
+                :开始爬虫;
+                note left:并行处理
+                -[#green]->
+                :上传云计算;
+                -[#green]->
+                :大数据分析;
+            }
+
+        fork again
+            partition 线程二 {
+                :开始爬虫;
+                note right:并行处理
+                -[#green]->
+                :上传云计算;
+                -[#green]->
+                :大数据分析;
+            }
+        end fork
+    repeat while
+    (没有符合条件的股票)
+
+    #red:没有这样的股票;
+    if(继续深造?) then (No)
+        :我和你没有什么话说了;
+    else
+
+        if(有机器学习？) then(No)
+            :升级深度学习算法;
+        else (Yes)
+            :神经网络学习中...;
+            :语音识别|
+            :视觉识别>
+            :动作识别<
+            :while}
+        endif
+    endif
+else (No)
+    :我和你没有共同话题;
+endif
+stop
+@enduml
