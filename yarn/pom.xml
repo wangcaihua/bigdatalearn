@@ -20,15 +20,6 @@
     <hadoop.version>2.7.2</hadoop.version>
   </properties>
 
-  <repositories>
-    <repository>
-      <id>apache.snapshots</id>
-      <name>apache repository</name>
-      <layout>default</layout>
-      <url>http://repository.apache.org/snapshots</url>
-    </repository>
-  </repositories>
-
   <dependencies>
     <dependency>
       <groupId>org.apache.hadoop</groupId>
@@ -148,8 +139,6 @@
         </exclusion>
       </exclusions>
     </dependency>
-
-
 
     <dependency>
       <groupId>commons-cli</groupId>
