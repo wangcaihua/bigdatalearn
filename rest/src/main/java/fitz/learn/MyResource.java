@@ -26,6 +26,9 @@ import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.api.core.ResourceConfig;
 import com.sun.jersey.spi.resource.Singleton;
 
+
+// https://blog.csdn.net/a19881029/article/details/43056429
+
 @Singleton
 @Path("service")
 public class MyResource {

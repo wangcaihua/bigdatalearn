@@ -24,7 +24,9 @@ hs_err_pid*
 # intellij file
 .idea/
 *.iml
-
+*/target/*
+target/*
+target/
 
 # .gitignore
 .gitignore
