@@ -2,7 +2,7 @@ syntax = "proto2";
 package Trd_SubAccPush;
 
 
-option java_package = "fitz.learn.quant.trade";
+option java_package = "fitz.learn.quant.gen.trade";
 option java_outer_classname = "Trd_SubAccPushProtos";
 
 message C2S

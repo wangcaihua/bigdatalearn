@@ -2,7 +2,7 @@ syntax = "proto2";
 package Qot_GetPlateSecurity;
 
 import "qot/Qot_Common.proto";
-option java_package = "fitz.learn.quant.quote";
+option java_package = "fitz.learn.quant.gen.quote";
 option java_outer_classname = "Qot_GetPlateSecurityProtos";
 
 message C2S

@@ -1,7 +1,7 @@
 syntax = "proto2";
 package Qot_GetTradeDate;
 
-option java_package = "fitz.learn.quant.quote";
+option java_package = "fitz.learn.quant.gen.quote";
 option java_outer_classname = "Qot_GetTradeDateProtos";
 
 message C2S

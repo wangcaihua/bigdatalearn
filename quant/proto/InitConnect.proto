@@ -1,7 +1,7 @@
 syntax = "proto2";
 package InitConnect;
 
-option java_package = "fitz.learn.quant.common";
+option java_package = "fitz.learn.quant.gen";
 option java_outer_classname = "InitConnectProtos";
 
 message C2S

@@ -2,7 +2,7 @@ syntax = "proto2";
 package Qot_GetBroker;
 
 import "qot/Qot_Common.proto";
-option java_package = "fitz.learn.quant.quote";
+option java_package = "fitz.learn.quant.gen.quote";
 option java_outer_classname = "Qot_GetBrokerProtos";
 
 message C2S

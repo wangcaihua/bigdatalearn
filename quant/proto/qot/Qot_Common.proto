@@ -1,7 +1,7 @@
 syntax = "proto2";
 package Qot_Common;
 
-option java_package = "fitz.learn.quant.quote";
+option java_package = "fitz.learn.quant.gen.quote";
 option java_outer_classname = "Trd_UpdateOrderFillProtos";
 
 enum QotMarket

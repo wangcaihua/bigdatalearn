@@ -12,6 +12,7 @@
     <properties>
         <protoc.version>3.0.0</protoc.version>
         <grpc.version>1.0.1</grpc.version>
+        <netty.version>4.1.13.Final</netty.version>
     </properties>
 
     <dependencies>
@@ -19,6 +20,11 @@
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
             <version>${protoc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${netty.version}</version>
         </dependency>
         <!--dependency>
             <groupId>io.grpc</groupId>
